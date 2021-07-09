@@ -1,8 +1,4 @@
-import {getRandomIntInclusive, getTextWithEllipsis} from './util.js';
-import {generatePhotoArray, generateCommentsArray} from './data.js';
+import {generatePhotoArray} from './data.js';
 
-generateCommentsArray();
+
 generatePhotoArray();
-getRandomIntInclusive();
-getTextWithEllipsis();
-
