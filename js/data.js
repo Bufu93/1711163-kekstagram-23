@@ -39,10 +39,10 @@ const generateCommentsArray = () => {
 const getObj = (noRepInt) => {
   const obj = {
     id: noRepInt,
-    url: `photos/${noRepInt}.jpeg`,
+    url: `photos/${noRepInt +1}.jpg`,
     description: 'photo',
     likes: getRandomIntInclusive(15, 200),
-    comment: generateCommentsArray(),
+    comments: generateCommentsArray(),
   };
   return obj;
 };
