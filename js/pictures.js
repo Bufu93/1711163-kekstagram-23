@@ -1,7 +1,3 @@
-import { generatePhotoArray } from './data.js';
-
-const pictures = generatePhotoArray();
-
 const getPicture = (element, item) => {
   const { url, comments, likes } = item;
   element.querySelector('.picture__img').src = url;
@@ -12,7 +8,6 @@ const getPicture = (element, item) => {
 };
 
 const pictureTemplate = document.querySelector('#picture').content;
-const picturesContainer = document.querySelector('.pictures.container');
 
 const getPictures = (items) => {
   const fragment = document.createDocumentFragment();
@@ -25,7 +20,5 @@ const getPictures = (items) => {
   return fragment;
 };
 
-const picturesFragment = getPictures(pictures);
-picturesContainer.appendChild(picturesFragment);
 
 export {getPictures};
